@@ -1,0 +1,42 @@
+{
+  "name": "elements-dist",
+  "version": "0.0.1",
+  "description": "A self-contained distribution of Stoplight Elements web components for offline API documentation.",
+  "license": "MIT",
+  "author": "Rohit Soni",
+  "type": "commonjs",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "getAssetPath.js",
+    "web-components.min.js",
+    "styles.min.css",
+    "web-components.min.js.LICENSE.txt",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "clean": "node scripts/clean.js",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rohitsoni007/elements-dist.git"
+  },
+  "keywords": [
+    "stoplight",
+    "elements",
+    "api",
+    "documentation",
+    "offline",
+    "web-components"
+  ],
+  "bugs": {
+    "url": "https://github.com/rohitsoni007/elements-dist/issues"
+  },
+  "homepage": "https://github.com/rohitsoni007/elements-dist#readme",
+  "devDependencies": {
+    "@stoplight/elements": "^9.0.13"
+  }
+}
