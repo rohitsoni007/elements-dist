@@ -51,4 +51,4 @@ If you find a bug or have a feature request, please open an issue on GitHub with
 
 ## License
 
-By contributing to Elements Dist, you agree that your contributions will be licensed under the ISC License.
+By contributing to Elements Dist, you agree that your contributions will be licensed under the MIT License.

@@ -1,6 +1,6 @@
 {
   "name": "elements-dist",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A self-contained distribution of Stoplight Elements web components for offline API documentation.",
   "license": "MIT",
   "author": "Rohit Soni",
@@ -8,6 +8,7 @@
   "main": "index.js",
   "files": [
     "index.js",
+    "index.html",
     "getAssetPath.js",
     "web-components.min.js",
     "styles.min.css",

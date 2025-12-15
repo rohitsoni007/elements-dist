@@ -36,7 +36,7 @@ const htmlContent = `<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Elements in HTML</title>
+    <title>API Docs</title>
     <!-- Embed elements Elements via Web Component -->
     <script src="./web-components.min.js"></script>
     <link rel="stylesheet" href="./styles.min.css">

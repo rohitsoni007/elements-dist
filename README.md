@@ -22,10 +22,10 @@ npm install
 ## Usage
 
 This module exposes Stoplight Elements dists as a dependency-free npm module. Use @stoplight/elements instead, if you'd like to have npm install dependencies for you.
-WebComponents and asset path can be imported by:
+Asset path can be imported by:
 
 ```javascript
-const { WebComponents, getAssetPath } = require('elements-dist');
+const { getAssetPath } = require('elements-dist');
 
 // Get the path to the assets directory
 const assetPath = getAssetPath();
@@ -40,6 +40,10 @@ npm run build
 ```
 
 This will copy the latest assets from `@stoplight/elements` and regenerate the HTML file.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for recent changes and updates.
 
 ## License
 
