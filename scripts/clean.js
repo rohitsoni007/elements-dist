@@ -9,9 +9,28 @@ const generatedFiles = [
   'index.html'
 ];
 
+// TypeScript declaration files
+const typeDeclarationFiles = [
+  'index.d.ts',
+  'getAssetPath.d.ts'
+];
+
 console.log('Cleaning generated files...');
 
 generatedFiles.forEach(file => {
+  const filePath = path.join(__dirname, '..', file);
+  
+  if (fs.existsSync(filePath)) {
+    fs.unlinkSync(filePath);
+    console.log(`Removed ${file}`);
+  } else {
+    console.log(`File not found (skipped): ${file}`);
+  }
+});
+
+console.log('Cleaning TypeScript declaration files...');
+
+typeDeclarationFiles.forEach(file => {
   const filePath = path.join(__dirname, '..', file);
   
   if (fs.existsSync(filePath)) {

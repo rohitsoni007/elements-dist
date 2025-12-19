@@ -22,6 +22,9 @@ npm install
 ## Usage
 
 This module exposes Stoplight Elements dists as a dependency-free npm module. Use @stoplight/elements instead, if you'd like to have npm install dependencies for you.
+
+### JavaScript
+
 Asset path can be imported by:
 
 ```javascript
@@ -29,6 +32,17 @@ const { getAssetPath } = require('elements-dist');
 
 // Get the path to the assets directory
 const assetPath = getAssetPath();
+```
+
+### TypeScript
+
+Full TypeScript support is included with type definitions:
+
+```typescript
+import { getAssetPath } from 'elements-dist';
+
+// Get the path to the assets directory with full type support
+const assetPath: string = getAssetPath();
 ```
 
 ## Building

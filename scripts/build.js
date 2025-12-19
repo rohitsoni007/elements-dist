@@ -54,4 +54,13 @@ const htmlPath = path.join(distDir, 'index.html');
 fs.writeFileSync(htmlPath, htmlContent);
 console.log(`Generated HTML file at ${htmlPath}`);
 
+// Generate TypeScript types
+const { execSync } = require('child_process');
+try {
+  execSync('tsc --emitDeclarationOnly', { stdio: 'inherit' });
+  console.log('TypeScript types generated successfully!');
+} catch (error) {
+  console.error('Failed to generate TypeScript types:', error instanceof Error ? error.message : String(error));
+}
+
 console.log('Build completed successfully!');
